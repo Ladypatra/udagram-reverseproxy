@@ -34,8 +34,8 @@ jobs:
             docker login -u $DOCKER_HUB_USER_ID -p $DOCKER_HUB_PWD
             docker tag udagram-reverseproxy $DOCKER_HUB_USER_ID/udagram-reverseproxy:v1
             docker push $DOCKER_HUB_USER_ID/udagram-reverseproxy:v1
-      - run:
-          name: docker run
-          command: |
-            docker run -p 8080:8080 udagram-reverseproxy
+      # - run:
+      #     name: docker run
+      #     command: |
+      #       docker run -p 8080:8080 udagram-reverseproxy
  
