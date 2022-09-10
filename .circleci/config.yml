@@ -38,3 +38,4 @@ jobs:
           name: docker run
           command: |
             docker run -p 8080:8080 udagram-reverseproxy
+ 
